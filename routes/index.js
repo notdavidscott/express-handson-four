@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const sqlite = require('sqlite3');
+const sqlite = require('sqlite3').verbose();
 
 
 const db = new sqlite.Database('./chinook.sqlite', err => {
